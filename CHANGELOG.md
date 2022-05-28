@@ -7,8 +7,18 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
-### Added
+## [1.9.1] - 2022-05-28
+
+### Added 
+- update link of tfg-order of my account of the order-confirmation page
+
+## [1.9.0] - 2022-03-29
+
+### Added 
+
 - Husky conventional commit
+- use `customerEmail` prop comming from `order-placed` app
+- Added classes to multiple elements from `PaymentMethod` to make its accesibles
 
 ## [1.8.0] - 2022-01-31
 
