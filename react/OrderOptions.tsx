@@ -61,7 +61,7 @@ const OrderOptions: FunctionComponent<Props & InjectedIntlProps> = ({
           <ButtonLink
             variation="secondary"
             fullWidth={fullWidth}
-            to={`${myAccountPath}#/tfg-orders/${orderId}`}>
+            to={`${myAccountPath}#/bash-orders/${orderId}`}>
             {intl.formatMessage(messages.updateButton)}
           </ButtonLink>
         )}
@@ -74,7 +74,7 @@ const OrderOptions: FunctionComponent<Props & InjectedIntlProps> = ({
           <ButtonLink
             variation="secondary"
             fullWidth={fullWidth}
-            to={`${myAccountPath}#/tfg-orders/`}>
+            to={`${myAccountPath}#/bash-orders/`}>
             {intl.formatMessage(messages.myOrdersButton)}
           </ButtonLink>
         </div>
@@ -89,7 +89,7 @@ const OrderOptions: FunctionComponent<Props & InjectedIntlProps> = ({
             <ButtonLink
               variation="danger-tertiary"
               fullWidth={fullWidth}
-              to={`${myAccountPath}#/tfg-orders/${orderId}/cancel`}>
+              to={`${myAccountPath}#/bash-orders/${orderId}/cancel`}>
               {intl.formatMessage(messages.cancelButton)}
             </ButtonLink>
           )}
