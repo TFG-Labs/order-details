@@ -36,7 +36,7 @@ const CustomerInfo: FunctionComponent<Props & InjectedIntlProps> = ({
               {personalData.document && (
                 <li
                   className={`${handles.customerInfoListDocument
-                    } pv2 c-muted-2`}>
+                    } pv2 c-muted-2 dn`}>
                   {personalData.document.value}
                 </li>
               )}
