@@ -51,7 +51,7 @@ const OrderOptions: FunctionComponent<Props & InjectedIntlProps> = ({
 
   return (
     <div className={`${className} flex flex-wrap justify-center flex-nowrap-m`}>
-      {isApp ? (
+      {!isApp ? (
         <div
           className={`${handles.updateOrderButton} mr5-ns mb5-s mb0-m w-100 w-auto-m`}>
           {takeaway ? (
