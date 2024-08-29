@@ -6,6 +6,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
+## [1.9.7] - 2024-08-29
 ## [1.9.6] - 2022-07-15
 ### Fixed
 - Change `tfg` to `bash` on order links
