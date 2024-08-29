@@ -24,7 +24,7 @@
     "react-dom": "^16.7.0",
     "react-testing-library": "^5.4.4",
     "regenerator-runtime": "^0.13.1",
-    "thefoschini.order-details": "https://bpf3405--thefoschini.myvtex.com/_v/private/typings/linked/v1/thefoschini.order-details@1.9.6+build1724765783/public/@types/thefoschini.order-details",
+    "thefoschini.order-details": "http://thefoschini.vtexassets.com/_v/public/typings/v1/thefoschini.order-details@1.9.6/public/@types/thefoschini.order-details",
     "tslint": "^5.12.1",
     "tslint-config-vtex": "^2.1.0",
     "tslint-eslint-rules": "^5.4.0",
