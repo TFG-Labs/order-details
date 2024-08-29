@@ -28,6 +28,7 @@ interface Props {
   fullWidth?: boolean
   orderId?: string
   myAccountPath?: string
+  isApp?: boolean
 }
 
 const CSS_HANDLES = [
@@ -44,33 +45,34 @@ const OrderOptions: FunctionComponent<Props & InjectedIntlProps> = ({
   fullWidth,
   orderId,
   myAccountPath = '/account',
+  isApp = false,
 }) => {
   const handles = useCssHandles(CSS_HANDLES)
 
   return (
     <div className={`${className} flex flex-wrap justify-center flex-nowrap-m`}>
-      <div
-        className={`${
-          handles.updateOrderButton
-        } mr5-ns mb5-s mb0-m w-100 w-auto-m`}>
-        {takeaway ? (
-          <ButtonLink variation="secondary" fullWidth={fullWidth} to="">
-            {intl.formatMessage(messages.printReceiptButton)}
-          </ButtonLink>
-        ) : (
-          <ButtonLink
-            variation="secondary"
-            fullWidth={fullWidth}
-            to={`${myAccountPath}#/bash-orders/${orderId}`}>
-            {intl.formatMessage(messages.updateButton)}
-          </ButtonLink>
-        )}
-      </div>
+      {!isApp ? (
+        <div
+          className={`${handles.updateOrderButton} mr5-ns mb5-s mb0-m w-100 w-auto-m`}>
+          {takeaway ? (
+            <ButtonLink variation="secondary" fullWidth={fullWidth} to="">
+              {intl.formatMessage(messages.printReceiptButton)}
+            </ButtonLink>
+          ) : (
+            <ButtonLink
+              variation="secondary"
+              fullWidth={fullWidth}
+              to={`${myAccountPath}#/bash-orders/${orderId}`}
+            >
+              {intl.formatMessage(messages.updateButton)}
+            </ButtonLink>
+          )}
+        </div>
+      ) : null}
       {!takeaway && (
         <div
-          className={`${
-            handles.myOrdersButton
-          } mr5-ns mb5-s mb0-m w-100 w-auto-m`}>
+          className={`${handles.myOrdersButton} mr5-ns mb5-s mb0-m w-100 w-auto-m`}
+        >
           <ButtonLink
             variation="secondary"
             fullWidth={fullWidth}

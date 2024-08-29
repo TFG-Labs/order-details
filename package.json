@@ -1,13 +1,10 @@
 {
-  "version": "1.0.0",
-  "devDependencies": {
-    "@vtex/intl-equalizer": "^2.3.0",
-    "husky": "^2.4.1",
-    "@commitlint/cli": "^16.0.2",
-    "@commitlint/config-conventional": "^16.0.0"
-  },
+  "name": "order-details",
+  "private": true,
+  "license": "UNLICENSED",
   "scripts": {
     "lint": "cd ./react && yarn lint",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json}\"",
     "test": "cd ./react && yarn test",
     "lint:locales": "intl-equalizer",
     "locales:fix": "intl-equalizer --fix",
@@ -20,6 +17,29 @@
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
+  "lint-staged": {
+    "*.{ts,js,tsx,jsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json,graphql,gql}": [
+      "prettier --write"
+    ]
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^16.0.2",
+    "@commitlint/config-conventional": "^16.0.0",
+    "@vtex/intl-equalizer": "^2.3.0",
+    "@vtex/prettier-config": "^0.1.4",
+    "eslint": "^7.12.1",
+    "eslint-config-vtex": "^12.3.2",
+    "eslint-config-vtex-react": "^6.3.2",
+    "husky": "^4.2.3",
+    "lint-staged": "^10.1.1",
+    "prettier": "^2.0.2",
+    "typescript": "^3.8.3"
+  },
+  "version": "1.0.0",
   "intl-equalizer": {
     "referenceLocale": "en",
     "localeDirectory": "messages"
