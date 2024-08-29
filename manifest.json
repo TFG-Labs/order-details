@@ -1,7 +1,7 @@
 {
   "vendor": "thefoschiniqa",
   "name": "order-details",
-  "version": "1.9.12",
+  "version": "1.9.13",
   "title": "Order Details Components",
   "description": "Components to display information on an order",
   "defaultLocale": "en-ZA",
